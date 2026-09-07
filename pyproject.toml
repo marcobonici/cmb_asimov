@@ -1,0 +1,24 @@
+[project]
+name = "cmb-asimov"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "camb>=2.0,<3",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+generate-cmb-asimov = "generate_asimov:main"
+
+[tool.setuptools]
+py-modules = ["generate_asimov"]
+
+[tool.setuptools.packages.find]
+include = ["cmb_asimov"]
+
+[tool.setuptools.package-data]
+cmb_asimov = ["data/*.npz"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

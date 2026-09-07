@@ -1,0 +1,23 @@
+{
+  "camb_version": "2.0.0",
+  "cosmology": {
+    "H0": 67.36,
+    "ombh2": 0.02237,
+    "omch2": 0.12,
+    "tau": 0.0544,
+    "As": 2.1e-09,
+    "ns": 0.9649,
+    "w0": -1.0,
+    "wa": 0.0
+  },
+  "lmax": 9500,
+  "primary_units": "D_ell in microkelvin^2",
+  "lensing_primary_units": "raw lensed C_ell in microkelvin^2",
+  "pp_units": "raw dimensionless C_ell^{phi phi}",
+  "data_vector_order": {
+    "camspec": "TT, TE, EE with NERSC cuts",
+    "act": "TT, TE, EE with NERSC cuts",
+    "spt": "TT(52), TE(72), EE(72), full lite likelihood",
+    "lensing": "ACT(10), Planck(9), SPT(16)"
+  }
+}
